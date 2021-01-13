@@ -1,2 +1,3 @@
-# module
-Generic Quartermaster module template
+# Quartermaster `module` template
+
+Generic Quartermaster module template.
