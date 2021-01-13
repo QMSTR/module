@@ -1,4 +1,10 @@
-.PHONY: linters
+.PHONY: build run linters
+
+build:
+	docker-compose build module
+
+run:
+	docker-compose run module
 
 linters:
 	docker run \
