@@ -35,13 +35,15 @@ RUN tar -xf go.tar.gz
 
 # Downloading Quartermaster
 # TODO Use releases in the future
+ARG QMSTR_REPO_URL
+ARG QMSTR_COMMIT_HASH
 WORKDIR /home
 RUN git clone \
-    https://github.com/qmstr/qmstr_k8s \
+    ${QMSTR_REPO_URL} \
     qmstr
 WORKDIR /home/qmstr
 RUN git reset --hard \
-    54269b34913737145dda51109b28f597226c0da5
+    ${QMSTR_COMMIT_HASH}
 
 ARG GOPROXY
 

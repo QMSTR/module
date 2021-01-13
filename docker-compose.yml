@@ -6,3 +6,5 @@ services:
       context: .
       args:
         GO_VERSION: 1.12.4 # TODO This should be centralized
+        QMSTR_REPO_URL: https://github.com/qmstr/qmstr_k8s
+        QMSTR_COMMIT_HASH: 54269b34913737145dda51109b28f597226c0da5
