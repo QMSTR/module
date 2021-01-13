@@ -8,6 +8,12 @@ Generic Quartermaster module template.
 make build
 ```
 
+### Get into its shell
+
+```bash
+make run
+```
+
 ## Run linters locally
 
 ```bash
