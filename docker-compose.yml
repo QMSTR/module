@@ -1,6 +1,6 @@
 version: '3.3'
 services:
   module:
-    image: endocode/module
+    image: endocodeci/module
     build:
       context: .
