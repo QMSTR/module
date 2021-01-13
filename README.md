@@ -14,6 +14,12 @@ make build
 make run
 ```
 
+## Run integration tests
+
+```bash
+make integration-test
+```
+
 ## Run linters locally
 
 ```bash
