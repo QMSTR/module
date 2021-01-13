@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+  module:
+    image: endocode/module
+    build:
+      context: .
+      args:
+        GO_VERSION: 1.12.4 # TODO This should be centralized
