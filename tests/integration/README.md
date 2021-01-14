@@ -10,8 +10,6 @@ the Quartermaster Orchestrator.
 
 ## How to run
 
-From the [root directory](../..):
-
 ```bash
-make integration-test
+make --directory ../.. integration-test
 ```
