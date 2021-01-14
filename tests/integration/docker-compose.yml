@@ -55,6 +55,6 @@ services:
     working_dir: /home/module
     volumes:
       - ./reach.sh:/home/module/reach.sh
-    # entrypoint: ./reach.sh
+    entrypoint: ./reach.sh
     depends_on:
       - master

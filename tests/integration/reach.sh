@@ -38,3 +38,6 @@ echo "Checking DGraph addresses: " "${dgraph_addresses[@]}"
 for dgraph_address in "${dgraph_addresses[@]}"; do
     __check_connectivity "${dgraph_address}"
 done
+
+# All tests 
+__success "All tests have passed"
