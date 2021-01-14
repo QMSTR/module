@@ -18,7 +18,21 @@ linters:
 		-v $(shell pwd -P):/tmp/lint \
 		github/super-linter
 
+# Integration test
+#
+# The module should be able to reach all the other components
 integration-test: build
+
+	# Running the test
+	#
+	# Retrieves `module`'s return code, and terminates
+	# the test as soon as it returns
 	docker-compose \
 		--file tests/integration/docker-compose.yml \
-		up
+		up \
+		--exit-code-from module
+	
+	# Manually removing containers on fail
+	docker-compose \
+		--file tests/integration/docker-compose.yml \
+		down
