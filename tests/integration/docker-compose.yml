@@ -1,0 +1,60 @@
+version: '3.3'
+services:
+
+  # DGraph
+  # From: https://github.com/dgraph-io/dgraph/blob/master/contrib/config/docker/docker-compose.yml
+  zero:
+    image: dgraph/dgraph:latest
+    volumes:
+      - /tmp/data:/dgraph
+    ports:
+      - 5080:5080
+      - 6080:6080
+    restart: on-failure
+    command: dgraph zero --my=zero:5080
+    logging:
+      driver: none
+  alpha:
+    image: dgraph/dgraph:latest
+    volumes:
+      - /tmp/data:/dgraph
+    ports:
+      - 8080:8080
+      - 9080:9080
+    restart: on-failure
+    command: dgraph alpha --my=alpha:7080 --zero=zero:5080
+    logging:
+      driver: none
+  ratel:
+    image: dgraph/dgraph:latest
+    ports:
+      - 8000:8000
+    command: dgraph-ratel
+    logging:
+      driver: none
+
+  # Orchestrator (former `qmstr-master`)
+  master:
+    image: endocodeci/qmstr-master:sha-6f14b29
+    entrypoint: "/usr/local/bin/qmstr-master"
+    command: "--config /home/qmstr/config/qmstr.yaml"
+    depends_on:
+      - zero
+      - alpha
+      - ratel
+    ports:
+      - 50051:50051
+    environment:
+      SERVER_BUILDPATH: "/var/qmstr/buildroot"
+    volumes:
+      - ./qmstr-config.yaml:/home/qmstr/config/qmstr.yaml
+
+  # Module
+  module:
+    image: endocodeci/module
+    working_dir: /home/module
+    volumes:
+      - ./reach.sh:/home/module/reach.sh
+    entrypoint: ./reach.sh
+    depends_on:
+      - master
