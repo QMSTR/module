@@ -13,7 +13,7 @@ jobs:
       - name: Prepare
         id: prep
         run: |
-          DOCKER_IMAGE=endocode/module
+          DOCKER_IMAGE=endocodeci/module
           TAGS="${DOCKER_IMAGE}:sha-${GITHUB_SHA::7}"
           echo ::set-output name=tags::${TAGS}
           echo ::set-output name=created::$(date -u +'%Y-%m-%dT%H:%M:%SZ')
