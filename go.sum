@@ -1,2 +1,3 @@
+github.com/qmstr/synclib v0.0.0-20210118135722-9b3041ecf6a0 h1:xknpdQuvd8a8pS/HQR1YzAXAyjUzV1XqpTj1a/ap9Ss=
 github.com/streadway/amqp v1.0.0 h1:kuuDrUJFZL1QYL9hUNuCxNObNzB0bV/ZG5jV3RWAQgo=
 github.com/streadway/amqp v1.0.0/go.mod h1:AZpEONHx3DKn8O/DFsRAY58/XVQiIPMTMB1SddzLXVw=
