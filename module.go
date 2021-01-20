@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/qmstr/synclib/module/rabbitmq"
+	"github.com/qmstr/synclib/pkg/module/rabbitmq"
 	"log"
 	"os"
 	"time"
