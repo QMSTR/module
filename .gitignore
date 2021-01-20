@@ -2,4 +2,5 @@
 super-linter.log
 
 # The module go binary
-module
+cmd/module/module
+cmd/module/main
