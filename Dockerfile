@@ -25,13 +25,13 @@ RUN adduser \
 WORKDIR $GOPATH/src/mypackage/myapp/
 
 # use modules
-COPY go.mod .
+COPY cmd/module/go.mod .
 
 ENV GO111MODULE=on
 RUN go mod download
 RUN go mod verify
 
-COPY . .
+COPY cmd/module/ .
 
 # Build the binary
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build \
