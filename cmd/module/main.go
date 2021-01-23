@@ -1,17 +1,19 @@
 package module
 
 import (
-	"github.com/qmstr/synclib/pkg/module/rabbitmq"
 	"log"
 	"os"
 	"time"
+
+	"github.com/qmstr/synclib/pkg/module/rabbitmq"
 )
 
-//nolint:deadcode,unused	// This function is intentionally unused,
-							// since this repository is a GitHub Template
-							// (https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-template-repository),
-							// and other module repositories are supposed 
-							// to be generated from this one.
+//nolint:deadcode,unused
+// This function is intentionally unused,
+// since this repository is a GitHub Template
+// (https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-template-repository),
+// and other module repositories are supposed
+// to be generated from this one.
 func main() {
 
 	// Connecting to RabbitMQ
