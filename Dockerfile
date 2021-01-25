@@ -10,8 +10,8 @@ RUN apk update \
     && \
     apk add \
     --no-cache \
-    git=2.26.2-r0  \
-    ca-certificates=20191127-r4 \
+    git=2.30.0-r0  \
+    ca-certificates=20191127-r5 \
     tzdata=2020f-r0 \
     && \
     update-ca-certificates
