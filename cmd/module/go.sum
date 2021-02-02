@@ -1,7 +1,15 @@
 github.com/qmstr/synclib v0.0.0-20210120104019-bcef7d5b1605 h1:yH0HH3cO1VJek5BduP38WXWFXaO3HfxIGDXPUqyZb6o=
+github.com/qmstr/synclib v0.0.0-20210202165622-0f282eef2445 h1:QoVjA3EDNXJw5BGJapY42OP5HZ5F4EmRDNXZ+iU68eo=
+github.com/qmstr/synclib v0.0.2 h1:tuofdVwjhmvfVBM9m0c4C7ZBPsSpyjZAKGuHIDzmv4A=
 github.com/qmstr/synclib/pkg/module/rabbitmq v0.0.0-20210120104019-bcef7d5b1605 h1:0w/Z+DBgv0B4fGGMOz6XTm0QA+Mh4rsdiSPKQUHYfCU=
 github.com/qmstr/synclib/pkg/module/rabbitmq v0.0.0-20210120104019-bcef7d5b1605/go.mod h1:t7kirz5GmrQ2yrfOdguo8//6O7aKW8graNAg8LoWOjk=
+github.com/qmstr/synclib/pkg/module/rabbitmq v0.0.0-20210202165622-0f282eef2445 h1:7zmB6mM7RnDkfHsewH6J7LaR+5In7SjqXobDG0zyOuE=
+github.com/qmstr/synclib/pkg/module/rabbitmq v0.0.0-20210202165622-0f282eef2445/go.mod h1:rFUErLWSsGiJ8TH/wUoT2VlWwMYBPT3Ld0t5S74Jtz0=
+github.com/qmstr/synclib/pkg/module/rabbitmq v0.0.0-20210202165944-b6ddc33b468d h1:06Nwxs35o5PzfOfJicbjzfTf+yDNNeFscnd0JP0skrI=
+github.com/qmstr/synclib/pkg/module/rabbitmq v0.0.0-20210202165944-b6ddc33b468d/go.mod h1:rFUErLWSsGiJ8TH/wUoT2VlWwMYBPT3Ld0t5S74Jtz0=
 github.com/qmstr/synclib/pkg/module/util v0.0.0-20210120104019-bcef7d5b1605 h1:5T1DLwSm3eCM0PVz/jeGVRg6ga1Bp1O2y7NF0fdez4I=
 github.com/qmstr/synclib/pkg/module/util v0.0.0-20210120104019-bcef7d5b1605/go.mod h1:tCkToMYeiAI5bwzvWwlUvjsiPp3822GHXQd7hQnoKhA=
+github.com/qmstr/synclib/pkg/module/util v0.0.0-20210202165622-0f282eef2445 h1:7SS2kYiD0eCdDaWSlXxbRa9genNgfpu7vzYnZwhZcns=
+github.com/qmstr/synclib/pkg/module/util v0.0.0-20210202165622-0f282eef2445/go.mod h1:tCkToMYeiAI5bwzvWwlUvjsiPp3822GHXQd7hQnoKhA=
 github.com/streadway/amqp v1.0.0 h1:kuuDrUJFZL1QYL9hUNuCxNObNzB0bV/ZG5jV3RWAQgo=
 github.com/streadway/amqp v1.0.0/go.mod h1:AZpEONHx3DKn8O/DFsRAY58/XVQiIPMTMB1SddzLXVw=

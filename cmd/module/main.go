@@ -25,10 +25,11 @@ func main() {
 	queue, _ := rabbitmq.DeclareQueues(ch, os.Getenv("QUEUE_NAME"))
 
 	// Dummy callback function
-	dummyCallbackFunction := func() {
+	dummyCallbackFunction := func() error {
 		dummyComputationTimeInSeconds := 15
 		log.Printf("Performing dummy computation for %d seconds...", dummyComputationTimeInSeconds)
 		time.Sleep(time.Duration(dummyComputationTimeInSeconds) * time.Second)
+		return nil // dummy function produces no error
 	}
 
 	// Executing the callback function upon receiving the order message
